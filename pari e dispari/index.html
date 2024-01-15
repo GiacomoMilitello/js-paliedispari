@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pari e Dispari</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="w-75 mx-auto">
+    <h1 class="text text-center mt-5 text-primary">Inserisci un numero da 1 a 5 e scegli "pari" o "dispari".</h1>
+    <span class="d-block text-center mb-5">il tuo numero verrà sommato ad un altro generato casualmente.<br>
+    se la somma corrisponde alla tua scelta (pari o dispari) hai vinto.</span>
+
+   <div class="d-flex flex-column gap-5">
+        <input type="number" id="number" class="mx-5" name="number">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>scegli un'opzione</option>
+            <option value="pari">pari</option>
+            <option value="dispari">dispari</option>
+        </select>
+        <button id="ok" class="btn btn-primary mx-5">Invio</button>
+        <ul id="result" class="fs-1 text-primary fw-bold text-center my-5 list-unstyled "></ul>
+   </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
